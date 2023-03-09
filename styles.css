@@ -24,7 +24,12 @@ body{
 	display:flex;
 	gap:30px;
 }
-.about > hr{
-	width:10vw;
-	height:2px;
+.about > span{
+	font-size:30px;
+	border-bottom:5px solid royalblue;
+}
+@media (max-width:756px){
+	.container{
+		flex-flow:column wrap;
+	}
 }
