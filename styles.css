@@ -5,7 +5,7 @@ body{
 	width:100vw;
 	display:grid;
 	grid-template-columns:1fr 1fr;
-	gap:20px;
+	gap:10%;
 }
 .bar{
 	height:12px;
@@ -22,14 +22,23 @@ body{
 .profile{
 	padding:15px;
 	display:flex;
-	gap:30px;
+	gap:20%;
 }
 .about > span{
 	font-size:30px;
 	border-bottom:5px solid royalblue;
 }
-@media (max-width:756px){
+@media (max-width:552px){
 	.container{
-		flex-flow:column wrap;
+		grid-template-columns:none;
+	}
+	.profile img{
+		width:200px;
+	}
+	.profile{
+		gap:10%;
+	}
+	.skills,.about{
+		padding-right:20px;
 	}
 }
